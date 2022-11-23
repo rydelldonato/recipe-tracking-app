@@ -6,17 +6,18 @@ function RecipeList({ recipes, deleteRecipe }) {
   // TODO: Create at least one additional component that is used by this component.
   // TODO: Each recipe row must have a delete button - <button name="delete">Delete</button> - that deletes the post when clicked
 //   console.log(recipes);
+
   return (
     <div className="recipe-list">
-      <table>
+      <table className="table table-striped table-sm table-responsive">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Cusine</th>
-            <th>Photos</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
+            <th scope="col">Name</th>
+            <th scope="col">Cusine</th>
+            <th scope="col">Photos</th>
+            <th scope="col">Ingredients</th>
+            <th scope="col">Preparation</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
