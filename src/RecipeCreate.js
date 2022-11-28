@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./RecipeCreate.css";
 
 function RecipeCreate({ addRecipe }) {
   // TODO: When the form is submitted, a new recipe should be created, and the form contents cleared.
@@ -35,19 +36,19 @@ function RecipeCreate({ addRecipe }) {
         <tbody>
           <tr>
             <td>
-              <input id="name" name="name" type="text" value={formData.name} onChange={handleInputChange}></input>
+              <input placeholder="Name" id="name" name="name" type="text" value={formData.name} onChange={handleInputChange}></input>
             </td>
             <td>
-              <input id="cuisine" name="cuisine" type="text" value={formData.cuisine} onChange={handleInputChange}></input>
+              <input placeholder="Cusine" id="cuisine" name="cuisine" type="text" value={formData.cuisine} onChange={handleInputChange}></input>
             </td>
             <td>
-              <input id="photo" name="photo" type="url" value={formData.photo} onChange={handleInputChange}></input>
+              <input placeholder="URL" id="photo" name="photo" type="url" value={formData.photo} onChange={handleInputChange}></input>
             </td>
             <td>
-              <textarea id="ingredients" name="ingredients" value={formData.ingredients} onChange={handleInputChange}></textarea>
+              <textarea placeholder="Ingredients" id="ingredients" name="ingredients" value={formData.ingredients} onChange={handleInputChange}></textarea>
             </td>
             <td>
-              <textarea id="preparation" name="preparation" type="text" value={formData.preparation} onChange={handleInputChange}></textarea>
+              <textarea placeholder="Preparation" id="preparation" name="preparation" type="text" value={formData.preparation} onChange={handleInputChange}></textarea>
             </td>
             <td>
               <button type="submit">Create</button>

@@ -22,7 +22,7 @@ function App() {
   
   return (
     <div className="App">
-      <header className="text-center"><h1>Delicious Food Recipes</h1></header>
+      <header><h1>Delicious Food Recipes</h1></header>
       <RecipeList recipes={recipes} deleteRecipe={deleteRecipe} />
       <RecipeCreate addRecipe={addRecipe} />
     </div>
